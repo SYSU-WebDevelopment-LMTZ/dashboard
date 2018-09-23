@@ -3,7 +3,7 @@
 &nbsp;&nbsp; 
 
 * 1、About 项目规划
-* 2、Team profile 团队组建
+* 2、[Team profile 团队组建](2018_9_23_team_profile.md)
 * 3、Investigation 项目前期调研
 * 4、Vision 项目愿景
 * 5、Product Backlog 产品特性
