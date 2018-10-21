@@ -31,5 +31,7 @@
     - 8.3 框架目录设计与逻辑架构与 ECB 的关系
     - 8.4 部署文档
 * X1 meet_recording
+    - [Inception meeting(2018/9/29)](2018_10_21_X1-inception-meeting.md)
+    - [Iteration 1 meeting(2018/10/21)](X1-iteration1-meeting.md)
 * X2 Tech/Work Report
 * X3 Final Report
