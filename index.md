@@ -6,7 +6,7 @@
 * 2、[Team profile 团队组建](02_team_profile.md)
 * 3、[Investigation 项目前期调研](03_Investigation.md)
 * 4、[Vision 项目愿景](04_vision.md)
-* 5、Product Backlog 产品特性(05_product_backlog.md)
+* 5、[Product Backlog 产品特性](05_product_backlog.md)
 * 6、Requirement specification 需求规格说明
     - 6.1 [Usecase Diagram 用例图](06_01_usecase_diagram.md)
     - 6.2 [Use Cases 用例+活动图](06_02_usecase.md)
