@@ -25,14 +25,14 @@
     - 7.4 软件架构文档
     - 7.5 用例设计
 * 8、生产规范与指南
-    - 8.1 代码规范
-    - 8.2 REST API设计规范
+    - 8.1 [代码规范](08_01_Code_Standard.md)
+    - 8.2 [REST API设计规范](08_02_RESTAPI_design_standard.md)
     - 8.3 框架目录设计与逻辑架构与 ECB 的关系
     - 8.4 部署文档
 * X1 meet_recording
     - [Inception meeting(2018/9/29)](X1-inception-meeting.md)
     - [Iteration 1 meeting(2018/10/21)](X1-iteration1-meeting.md)
-    - [Iteration 1 meeting(2018/11/13)](X1-iteration2-meeting.md)
+    - [Iteration 2 meeting(2018/11/13)](X1-iteration2-meeting.md)
 
 * X2 Tech/Work Report
 * X3 Final Report
