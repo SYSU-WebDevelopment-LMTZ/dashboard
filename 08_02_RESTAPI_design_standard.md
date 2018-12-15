@@ -78,7 +78,7 @@
 - 对于资源的具体操作类型，由HTTP动词表示
 - 常用的HTTP动词有下面四个（括号里是对应的SQL命令）
     - GET(SELECT)：从服务器取出资源（一项或多项）
-    - POSE(INSERT)：从服务器新建一个资源
+    - POST(INSERT)：从服务器新建一个资源
     - PUT(UPDATE)：在服务器更新资源
     - DELETE(DELETE)：在服务器删除资源
 -  下面是一些例子
