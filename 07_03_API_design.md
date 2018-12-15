@@ -97,10 +97,10 @@
     - 200
         ```
         {
-        "phone" : "string",
-        "password" : "string",
-        "logo" : "string",
-        "description" : "string"
+            "phone" : "string",
+            "password" : "string",
+            "logo" : "string",
+            "description" : "string"
         }
         ```
     - 400
@@ -116,10 +116,10 @@
 - **接口参数：**
     ```
     {
-    "phone" : "string",
-    "password" : "string",
-    "logo" : "string",
-    "description" : "string"
+        "phone" : "string",
+        "password" : "string",
+        "logo" : "string",
+        "description" : "string"
     }
     ```
 - **接口返回值：**
