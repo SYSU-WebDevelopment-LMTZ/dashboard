@@ -47,12 +47,18 @@
     {
         "phone" : "string",
         "password" : "string",
+        "name" : "string",
+        "description" : "string",
         "logo" : "string",
-        "description" : "string"
     }
     ```
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -72,6 +78,11 @@
     ```
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -85,6 +96,11 @@
 - **接口参数：**
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -101,9 +117,9 @@
         ```
         {
             "phone" : "string",
-            "password" : "string",
+            "name" : "string",
+            "description" : "string",
             "logo" : "string",
-            "description" : "string"
         }
         ```
     - 400
@@ -119,14 +135,19 @@
 - **接口参数：**
     ```
     {
-        "phone" : "string",
-        "password" : "string",
+        "name" : "string",
+        "description" : "string",
         "logo" : "string",
-        "description" : "string"
+        "password" : "string",
     }
     ```
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -137,7 +158,7 @@
 ### 2.2 菜品
 
 #### <span id="2.2.1">2.2.1 查看所有菜品</span>
-- **接口地址：** /dishs
+- **接口地址：** /dish
 - **请求方法：** GET
 - **接口参数：**
 - **接口返回值：**
@@ -160,7 +181,7 @@
         ```
 
 #### <span id="2.2.2">2.2.2 获取菜品详细信息</span>
-- **接口地址：** /dishs/:id
+- **接口地址：** /dish/:id
 - **请求方法：** GET
 - **接口参数：**
 - **接口返回值：**
@@ -182,20 +203,24 @@
         ```
 
 #### <span id="2.2.3">2.2.3 添加菜品</span>
-- **接口地址：** /dishs/:id
+- **接口地址：** /dish/
 - **请求方法：** POST
 - **接口参数：**
     ```
     {
-        "dishid" : 0
         "name" : "string"
-        "price" : 0
+        "price" : 0.0
         "description" : "string"
         "imageurl" : "string"   
     }
     ```
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -204,20 +229,24 @@
         ```
 
 #### <span id="2.2.4">2.2.4 编辑菜品详细信息</span>
-- **接口地址：** /dishs/:id
+- **接口地址：** /dish/:id
 - **请求方法：** PUT
 - **接口参数：**
     ```
     {
-        "dishid" : 0
         "name" : "string"
-        "price" : 0
+        "price" : 0.0
         "description" : "string"
         "imageurl" : "string"   
     }
     ```
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -226,11 +255,16 @@
         ```
 
 #### <span id="2.2.5">2.2.5 删除菜品</span>
-- **接口地址：** /dishs/:id
+- **接口地址：** /dish/:id
 - **请求方法：** DELETE
 - **接口参数：**
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -239,17 +273,19 @@
         ```
 
 #### <span id="2.2.6">2.2.6 查看推荐菜品</span>
-- **接口地址：** /recommendation
+- **接口地址：** /dish/recommendation/
 - **请求方法：** GET
 - **接口参数：**
 - **接口返回值：**
     - 200
         ```
-        {
-            "recommendationid" : 0
+        [
+            {
+            "id" : 0
             "dishid" : 0
             "description" : "string"
-        }
+            }
+        ]
         ```
     - 400
         ```
@@ -259,16 +295,22 @@
         ```
 
 #### <span id="2.2.7">2.2.7 添加推荐菜品</span>
-- **接口地址：** /recommendation
+- **接口地址：** /dish/recommendation
 - **请求方法：** POST
 - **接口参数：**
     ```
     {
-        "dishid" : 0 
+        "dishid" : 0,
+        "description" : "string"
     }
     ```
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -277,16 +319,16 @@
         ```
 
 #### <span id="2.2.8">2.2.8 删除推荐菜品</span>
-- **接口地址：** /recommendation
+- **接口地址：** /recommendation/:id
 - **请求方法：** DELETE
 - **接口参数：**
-    ```
-    {
-        "dishid" : 0 
-    }
-    ```
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -350,7 +392,7 @@
 - **接口参数：**
     ```
     {
-        "price" : 0
+        "price" : 0.0
     }
     ```
 - **接口返回值：**
@@ -368,17 +410,19 @@
 - **接口参数：**
     ```
     {
-        "orderid" : 0
+        "restaurant_id" : 0
         "tableid" : 0
-        "state" : "string"
-        "price" : 0
-        "ordertime" : "string"
         "dishid" : [0]
         "note" : "string"
     }
     ```
 - **接口返回值：**
     - 200
+        ```
+        {
+            "message" : "string"
+        }
+        ```
     - 400
         ```
         {
@@ -392,7 +436,7 @@
 - **接口参数：**
     ```
     {
-        "receive" : true
+        "state" : 0
     }
     ```
 - **接口返回值：**
