@@ -8,35 +8,35 @@
 4. 管理菜单
 5. 查看订单
 
-还要继续补充
+
 
 ## 系统顺序图
 1. 浏览菜单
 
-    by 
+    by 18214663
 
 ![browsemenu](img/system_sequence_diagram/browsemenu.jpg)
 
 2. 查看近日推荐
 
-    by
+    by 18214796
 
 ![recommend](img/system_sequence_diagram/recommend.jpg)
 
 3. 查看菜品详细信息
 
-    by
+    by 18214687
 
 ![menudetails](img/system_sequence_diagram/menudetails.jpg)
 
 4. 管理菜单
 
-    by
+    by 18214788
 
 ![managemenu](img/system_sequence_diagram/managemenu.jpg)
 
 5. 查看订单
 
-    by
+    by 18214788
 
 ![browseorder](img/system_sequence_diagram/browseorder.jpg)
