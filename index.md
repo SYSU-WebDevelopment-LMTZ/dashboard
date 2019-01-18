@@ -37,4 +37,4 @@
 * X2 Tech/Work Report
 * X3 Final Report
 * XX homework 
-    - [homework 9](homework_9.md)
+    - [建模练习](homework_9.md)
