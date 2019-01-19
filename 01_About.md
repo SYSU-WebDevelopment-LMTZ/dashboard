@@ -15,7 +15,7 @@
 
 ## 项目推进计划 （Iterations 迭代）
 
-### Iteration 1 (September 19 - October 9)
+### Iteration 1 (September 19 - October 21)
 
 小组成立于第3周，所以从第3周开始。
 
@@ -28,10 +28,11 @@
 ### Week 1 (September 19 - September 25) 
 * 确定项目主题和小组分工
 * 完成市场调研和需求分析
-* 完成项目规划
+* 完成项目规划  
 
+[Iteration 1 meeting(2018/10/21)](X1-iteration1-meeting.md)
 ### Iteration 2 ()
-留空
+[Iteration 2 meeting(2018/11/13)](X1-iteration2-meeting.md)
 
 ### Iteration 3 ()
-留空
+[Iteration 3 meeting(2018/12/11)](X1-iteration3-meeting.md)
