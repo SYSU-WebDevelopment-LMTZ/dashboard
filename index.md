@@ -35,7 +35,7 @@
     - [Iteration 2 meeting(2018/11/13)](X1-iteration2-meeting.md)
     - [Iteration 3 meeting(2018/12/11)](X1-iteration3-meeting.md)
 * X2 Tech/Work Report
-    - [18214687 zwx]()
+    - [18214687 zwx](tech_report_zwx.md)
     - [18214788 lqy](tech_report_lqy.md)
     - [18214663_tn]()
     - [18214796_mm](tech_report_mm.md)
