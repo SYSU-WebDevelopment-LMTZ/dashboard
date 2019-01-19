@@ -62,7 +62,7 @@ http://192.168.234.97
 
 ## 后台部署
 
-1. 系统环境：Ubunto 18 /（Windows 10 Virtualenv 配置虚拟环境）
+1. 系统环境：Ubunto 18 /（Windows 10 Python Virtualenv 配置虚拟环境）
 
 2. MySql安装
 
