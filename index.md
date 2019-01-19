@@ -28,7 +28,7 @@
     - 8.1 [代码规范](08_01_Code_Standard.md)
     - 8.2 [REST API设计规范](08_02_RESTAPI_design_standard.md)
     - 8.3 [架构设计、详细设计（BCE方法）到应用程序框架映射指南](08_03_Mapping_Guide.md)
-    - 8.4 部署文档
+    - 8.4 [部署文档](08_04_Deployment_Document.md)
 * X1 meet_recording
     - [Inception meeting(2018/9/29)](X1-inception-meeting.md)
     - [Iteration 1 meeting(2018/10/21)](X1-iteration1-meeting.md)
