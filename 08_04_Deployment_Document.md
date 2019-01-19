@@ -2,13 +2,14 @@
 
 ## 前端部署
 
-1. <b> Vue前端构建 </b>  
+1. <b> Vue前端构建</b>
 ```
 npm run build  
 ```  
 构建成功后基本会在配置的dist文件下生成静态html文件
 
 2. <b> 生成的静态代码上传到服务器 </b>  
+
 把生成目录dist里的文件打包上传至服务器(192.168.234.97)
 ```
 scp ./dist.zip root@192.168.234.97:/opt/www/vue-base  
@@ -24,7 +25,8 @@ scp ./dist.zip root@192.168.234.97:/opt/www/vue-base
 unzip dist.zip 
 ``` 
 
-4. <b> Nginx 配置 </b>  
+4. <b> Nginx 配置 </b>   
+
 Nginx安装目录  
 ```
 cd /opt/software/nginx 
@@ -33,7 +35,7 @@ cd /opt/software/nginx
 ```
 vim conf/nginx.conf 
 ```   
-修改如下，root映射到静态戴安文件夹：    
+修改如下，root映射到静态代码文件夹：    
 ```
   location / {    
       #root   html;    
@@ -43,6 +45,7 @@ vim conf/nginx.conf
 ``` 
 
 5. <b> 启动Nignx </b>  
+
 进入Nignx安装目录，执行命令：  
 ```
 ./nginx 
@@ -52,7 +55,8 @@ vim conf/nginx.conf
 ./nginx -s reload
 ```  
 
-6. <b> 访问 </b>   
+6. <b> 访问 </b>  
+
 http://192.168.234.97
 
 
