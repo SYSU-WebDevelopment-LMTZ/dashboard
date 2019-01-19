@@ -24,30 +24,26 @@
 
 ## 3.研究VUE 与 Flux 状态管理的异同
 * <b> Flux 状态管理 </b>  
-React本身只涉及UI层，如果搭建大型应用，必须搭配一个前端框架。即React +前端框架才能基本满足需要。Facebook官方使用的是Flux框架。React标榜自己是MVC里面V的部分，那么Flux就相当于添加M和C的部分。使用Flux组织代码和安排内部逻辑，使得应用更易于开发和维护，它跟MVC架构是同一类东西，但是更加简单和清晰。Flux利用单向数据流的方式来组合React中的视图组件。  
-<br> 
-Flux将一个应用分成四个部分：  
-View (视图层) :React 组件，这一层可以看作 controller-views，作为视图同时响应用户交互  
-Action（动作）：视图层发出的消息（比如mouseClick）  
-Dispatcher（派发器）：用来接收Actions、执行回调函数，处理动作分发，维护 Store 之间的依赖关系  
-Store（数据层）：数据和逻辑部分，用来存放应用的状态，一旦发生变动，就提醒Views要更新页面  
-<br> 
-在相对独立的组件中，Action -> Store -> View 的单向数据流能得到保证。  
+  * React本身只涉及UI层，如果搭建大型应用，必须搭配一个前端框架。即React +前端框架才能基本满足需要。Facebook官方使用的是Flux框架。React标榜自己是MVC里面V的部分，那么Flux就相当于添加M和C的部分。使用Flux组织代码和安排内部逻辑，使得应用更易于开发和维护，它跟MVC架构是同一类东西，但是更加简单和清晰。Flux利用单向数据流的方式来组合React中的视图组件。  
+  * Flux将一个应用分成四个部分：  
+    View (视图层) :React 组件，这一层可以看作 controller-views，作为视图同时响应用户交互  
+    Action（动作）：视图层发出的消息（比如mouseClick）  
+    Dispatcher（派发器）：用来接收Actions、执行回调函数，处理动作分发，维护 Store 之间的依赖关系  
+    Store（数据层）：数据和逻辑部分，用来存放应用的状态，一旦发生变动，就提醒Views要更新页面  
+  * 在相对独立的组件中，Action -> Store -> View 的单向数据流能得到保证。  
 
 
 * <b>VUE 状态管理 </b>  
-Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。  
-<br>
-状态管理包含以下几部分：  
-store：相当于一个容器，；它是响应式的在全局都可以使用它；一个应用里只能定义一个 store容器  
-state：这里对象里面放了各种状态（变量）  
-mutations：唯一用来修改状态的回调函数，但不支持异步操作  
-actions：包含异步操作，提交mutations来修改状态  
-getters：在组件内部获取store中状态的函数  
-module：将store分割成不同的模块  
-<br>
-完整的 Vuex 动作是这样的： 
-Components( 组件 )中 methods 里面一个方法 dispatch （调用）Actions，Actions 然后 commit 对应的Mutations 只有Mutations 可以操作 State 中的状态数据，状态一改变，组件中就重新渲染。应用级的状态由store集中管理。修改状态的唯一方式是commit同步的mutation。异步逻辑放在action里。  
+  * Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。  
+  * 状态管理包含以下几部分：  
+    store：相当于一个容器，；它是响应式的在全局都可以使用它；一个应用里只能定义一个 store容器  
+    state：这里对象里面放了各种状态（变量）  
+    mutations：唯一用来修改状态的回调函数，但不支持异步操作  
+    actions：包含异步操作，提交mutations来修改状态  
+    getters：在组件内部获取store中状态的函数  
+    module：将store分割成不同的模块  
+  * 完整的 Vuex 动作是这样的：   
+    Components( 组件 )中 methods 里面一个方法 dispatch （调用）Actions，Actions 然后 commit 对应的Mutations 只有Mutations 可以操作 State 中的状态数据，状态一改变，组件中就重新渲染。应用级的状态由store集中管理。修改状态的唯一方式是commit同步的mutation。异步逻辑放在action里。  
 
 * <b>区别 </b>   
 与flux对比，最大的区别是Vuex把action细分成了action和mutation，分别应对异步场景和同步场景，由store自身充当dispatcher（负责注册/分发action/(mutation)。即如果把action和mutation看作一层（Flux里的action），二者结构完全一致。
