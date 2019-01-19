@@ -62,8 +62,16 @@ import 'mint-ui/lib/style.css'
 Vue.use(MintUI)
 ```
 >然后就可以在项目中使用Mint UI的组件了。在这里用ＨelloWorld.vue中添加Mint UI的Spinner组件做个示范：  
+<br>
+
 ![vue代码](img/study_report_diagram/mm/vue_code.png)  
+
+<br>
+
 可以看到Spinner已经显示在网页中:  
+
+<br>
+
 ![Spinner显示](img/study_report_diagram/mm/Spinner_show_in_web.png)
 
 ### <b>五、Chromium模拟移动端显示</b>
