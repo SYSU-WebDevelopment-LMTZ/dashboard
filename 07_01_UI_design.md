@@ -20,15 +20,15 @@
 ### 商家详情页面
 ![UI_choose](img/UI_diagram/InfoPage.png)
 
-##商家端
+## 商家端
 
-###登录页面
+### 登录页面
 ![UI_choose](img/UI_diagram/Login.png)
-###信息页面
+### 信息页面
 ![UI_choose](img/UI_diagram/InfoManage.png)
-###菜单页面
+### 菜单页面
 ![UI_choose](img/UI_diagram/DishManage.png)
-###订单页面
+### 订单页面
 ![UI_choose](img/UI_diagram/OrderManage.png)
 
 ### 自评
