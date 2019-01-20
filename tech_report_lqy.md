@@ -18,12 +18,15 @@ flask是一个基于Python开发并且依赖jinja2模板和Werkzeug WSGI服务�
 ## 2. flask 概览
 - 配置
 > 相关配置主要放在config.py文件中，主要配置有DEBUG，数据库的连接"SQLALCHEMY_DATABASE_URI"等，还有一些可选参数DIALECT等，必须在主文件中导入这个配置文件：
+
 ``` 
   import config
   app.config.from_object(config)
 ``` 
+
 - 路由
 > flask的路由使用Flask应用实例的route装饰器将一个URL规则绑定到一个视图函数上。
+
 ``` 
   @app.route('/')
   def index():
@@ -37,6 +40,7 @@ flask是一个基于Python开发并且依赖jinja2模板和Werkzeug WSGI服务�
 
 - 模型
 > 一个类对应了一张表。通常会将所有模型放在一个models.py文件中，比如要建一张article表，有四个字段，分别是id,title,content，create_time，分别是四种数据类型，在models.py中定义一个Article类，如下：
+
 ``` 
   from datetime import datetime
   class Article(db.Model):
@@ -46,9 +50,12 @@ flask是一个基于Python开发并且依赖jinja2模板和Werkzeug WSGI服务�
       title = db.Column(db.String(30), nullable=False)
       content = db.Column(db.Text, nullable=False)
       create_time = db.Column(db.DateTime, default=datetime.now)
-
 ``` 
+
+
 > 相似地，在我们的项目中model文件如下所示，定义了order类:
+
+
 ```
 class Order(db.Model):                                                                              
     __tablename__ = 'orders'                                                                        
@@ -71,6 +78,7 @@ class Order(db.Model):
 
 ## 3. flask的基本使用（示例）
 - 前两行创建一个应用程序实例。使用web服务器网关接口协议将所有从客户端接收的请求传递给这个对象处理。这个应用程序实例就是Flask类的一个对象。接下来三行代码用于注册被装饰的函数来作为一个路由。最后是启动服务程序，__name__ == '__main__'在此处使用是用于确保web服务已经启动当脚本被立即执行。一旦服务启动，它将进入循环等待请求并为之服务。这个循环持续到应用程序停止，例如通过按下Ctrl-C。有几个选项参数可以给app.run()配置web服务的操作模式。在开发期间，可以很方便的开启debug模式，将激活 debugger 和 reloader 。这样做是通过传递debug为True来实现的。
+
 
 ``` 
   from flask import Flask
