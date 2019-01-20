@@ -37,7 +37,7 @@
 * X2 Tech/Work Report
     - [18214687 zwx](tech_report_zwx.md)
     - [18214788 lqy](tech_report_lqy.md)
-    - [18214663_tn]()
+    - [18214663_tn](tech_report_tn.md)
     - [18214796_mm](tech_report_mm.md)
 * X3 Final Report
     - [18214687 zwx]()
