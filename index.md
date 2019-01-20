@@ -40,10 +40,10 @@
     - [18214663_tn](tech_report_tn.md)
     - [18214796_mm](tech_report_mm.md)
 * X3 Final Report
-    - [18214687 zwx]()
-    - [18214788 lqy]()
+    - [18214687 zwx](Final_report_zwx.md)
+    - [18214788 lqy](Final_report_lqy.md)
     - [18214663_tn]()
-    - [18214796_mm]()
+    - [18214796_mm](Final_report_mm.md)
 * XX homework 
     - [实践九 建模练习](homework_9.md)
     - [实践十一 个人作业](homework_11.md)
