@@ -3,74 +3,36 @@
 ## 前端部署
 
 1. <b> Vue前端构建</b>
-```
-npm run build  
-```  
-构建成功后基本会在配置的dist文件下生成静态html文件
-
-2. <b> 生成的静态代码上传到服务器 </b>  
-
-把生成目录dist里的文件打包上传至服务器(192.168.234.97)
-```
-scp ./dist.zip root@192.168.234.97:/opt/www/vue-base  
-```  
-输入服务器登录密码  
-上传到服务器静态地址  
-```
-/opt/www/vue-base 
-``` 
-
-3. <b> 解压 dist.zip </b>  
-```
-unzip dist.zip 
-``` 
-
-4. <b> Nginx 配置 </b>   
-
-Nginx安装目录  
-```
-cd /opt/software/nginx 
-```   
-进入Nginx安装目录，修改Nginx的配置文件：  
-```
-vim conf/nginx.conf 
-```   
-修改如下，root映射到静态代码文件夹：    
-```
-  location / {    
-      #root   html;    
-      root   /opt/www/vue-base/dist;    
-      index  index.html index.htm;    
-  } 
-``` 
-
-5. <b> 启动Nignx </b>  
-
-进入Nignx安装目录，执行命令：  
-```
-./nginx 
-```   
-重启Nginx  
-```
-./nginx -s reload
-```  
-
-6. <b> 访问 </b>  
-
-http://192.168.234.97
+    ```
+    npm run build  
+    ``` 
+    构建成功后基本会在配置的dist文件下生成静态文件
+2. <b> 静态文件部署 </b>
+    将前端构建生成的静态文件复制到后台项目的/dist目录下
 
 
 ## 后台部署
 
-1. 系统环境：Ubunto 18 /（Windows 10 Python Virtualenv 配置虚拟环境）
+- 操作系统：Ubuntu 18.04LTS
 
-2. MySql安装
+- 部署工具：Gunicorn + Nginx
 
-3. Python 3.6 + flask 环境配置
+1. 安装Gunicorn和Nginx
+    ```
+    pip install gunicorn
+    sudo apt install nginx
+    ```
 
-4. docker安装
+2. [运行服务器](https://github.com/SYSU-WebDevelopment-LMTZ/backend/blob/master/readme.md)
 
-5. [版本配置](requirements.txt)
+3. 修改Nginx配置文件软链接
+    ```
+    sudo ln -s /home/zhangwx/mycode/system/backend+shangjiaduan+frontend/backend/code/nginx/conf.d/web.conf /etc/nginx/sites-available/default
+    ```
 
-6. [运行服务器](https://github.com/SYSU-WebDevelopment-LMTZ/backend/blob/master/readme.md)
+4. 进入点餐页面
+    ```
+    http://localhost/
+    ```
 
+- 说明：由于我们没有租云服务器，因此是在局域网内完成项目的部署工作。部署后，系统能正常访问。
